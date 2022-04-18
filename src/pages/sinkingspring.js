@@ -2,26 +2,26 @@
 
 const sinkingspring = function() {
   //Identify main container of site
-  const content = document.querySelector('body');
+  const contentContainer = document.querySelector('.content-container');
 
+  contentContainer.style.height = "58.5%";
 
-  const homePage = document.createElement('div');
-  homePage.classList = "home-page-container";
-  //homePage.style.background = `url(${backgroundSinkingSpring})`;
-  content.appendChild(homePage);
+  const mainContainer = document.createElement('div');
+  mainContainer.className = "main-container";
+  contentContainer.appendChild(mainContainer);
 
   const dimContainer = document.createElement('div');
-  dimContainer.classList = "dim-container";
+  dimContainer.className = "dim-container";
   dimContainer.id = "dim-container";
-  homePage.appendChild(dimContainer);
+  mainContainer.appendChild(dimContainer);
 
   const dimmerContainer = document.createElement('div');
-  dimmerContainer.classList = "dim-container";
+  dimmerContainer.className = "dim-container";
   dimmerContainer.id = "dimmer-container";
   dimContainer.appendChild(dimmerContainer);
 
   const infoContainer = document.createElement('div');
-  infoContainer.classList = "info-container";
+  infoContainer.className = "info-container";
   dimmerContainer.appendChild(infoContainer);
 
   const nameTele = document.createElement('h1');

@@ -1,11 +1,15 @@
 import header from "./pages/header";
 import footer from "./pages/footer";
 import sinkingspring from "./pages/sinkingspring";
+import clear from "./functions/clear"
 import './style.css';
+import menu from "./pages/menu";
 
 //Find body element and give class of 'content'
 const content = document.querySelector('body');
-content.className = "content";
+content.className = "full-site-container";
+const contentContainer = document.createElement('div');
+contentContainer.className = "content-container";
 
 content.appendChild(header());
 
@@ -21,7 +25,8 @@ btnOO.addEventListener('click', function() {
 });
 
 btnMenu.addEventListener('click', function() {
-
+  clear();
+  menu();
 });
 
 btnSpecials.addEventListener('click', function() {
@@ -40,5 +45,6 @@ btnCareers.addEventListener('click', function() {
 
 })
 
+content.appendChild(contentContainer);
 sinkingspring();
 content.appendChild(footer());

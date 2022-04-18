@@ -67,8 +67,11 @@ const footer = function() {
   socialList.append(socialTwitter, socialInsta, socialYT);
 
   //Build Sitemap
+  const sitemapTitle = document.createElement('div');
+  sitemapTitle.class = "sitemap-title";
+  sitemapTitle.innerHTML = "<h2>Sitemap</h2>";
+  sitemapContainer.appendChild(sitemapTitle);
   const sitemapList = document.createElement('ul');
-  sitemapList.innerHTML = "<h2>Sitemap</h2>";
   sitemapContainer.appendChild(sitemapList);
 
   const homeMap = document.createElement('li');

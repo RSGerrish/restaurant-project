@@ -7,6 +7,8 @@ module.exports = {
     header: './src/pages/header.js',
     footer: './src/pages/footer.js',
     sinkingspring: './src/pages/sinkingspring.js',
+    menu: './src/pages/menu.js',
+    clear: './src/functions/clear.js',
   },
   plugins: [
     new HtmlWebpackPlugin({

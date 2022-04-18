@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  height: 80vh;
+  height: 100vh;
 }
 
 a {
@@ -10,14 +10,10 @@ a {
   color: floralwhite;
 }
 
-li {
-  display: flex;
-  align-items: center;
-}
-
 ul {
   padding: 1rem;
   margin: 0;
+  list-style-type: none;
 }
 
 header {
@@ -38,16 +34,17 @@ h1 {
   font-size: 3rem;
 }
 
-h2 {
-  margin: 0.8rem 0;
-}
-
 h3 {
   margin: 0.5rem 0;
 }
 
 h4 {
   font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
 }
 
 .nav-container {
@@ -60,7 +57,7 @@ h4 {
   background: rgba(0, 0, 0, 50%);
   border-radius: 10px;
   display: flex;
-justify-content: center;
+  justify-content: center;
 }
 
 .btn-nav {
@@ -91,7 +88,7 @@ justify-content: center;
   cursor: default;
 }
 
-.home-page-container {
+.main-container {
   margin: 0;
   background: url('./img/Sinking-Spring.jpg');
   background-size: 2560px 1440px;
@@ -140,20 +137,68 @@ footer {
   margin: 20px;
 }
 
-#address-container ul {
-  list-style-type: none;
-}
-
-#social-container ul {
-  list-style-type: none;
+#social-container li {
+  display: flex;
+  align-items: center;
 }
 
 #sitemap-container li {
-  list-style-type: disc;
+  padding: 5px;
+}
+
+#sitemap-container ul {
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+  column-count: 2;
+  column-gap: 20px;
 }
 
 .social-icon {
-  height: 32px;
-  width: 32px;
-  margin: 10px;
+  height: 24px;
+  width: 24px;
+  margin: 6px;
+}
+
+.menu-container {
+  font-family: 'Roboto', sans-serif;
+}
+
+.menu-title {
+  color: rgb(49, 49, 49);
+  font-weight: 900;
+}
+
+.menu-subtitle h2 {
+  color:rgb(61, 61, 61);
+  font-weight: 500;
+}
+
+.menu-item h3 {
+  color:rgb(104, 104, 104);
+  font-weight: 400;
+}
+
+.menu-description h5 {
+  color:rgb(129, 129, 129);
+  font-weight: 300;
+}
+
+.menu-price h3 {
+  color: rgb(61, 61, 61);
+  font-weight: 400;
+}
+
+.menu-card-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-card {
+  width: clamp(150px, 22%, 350px);
+  height: clamp(200px, 25%, 350px);
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
 }
