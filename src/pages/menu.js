@@ -5,8 +5,6 @@ const menu = function () {
 
   contentContainer.style.height = "auto";
 
- 
-
   const menuContainer = document.createElement('div');
   menuContainer.className = "menu-container";
   contentContainer.appendChild(menuContainer);
@@ -30,7 +28,6 @@ const menu = function () {
   const br1 = document.createElement('br');
 
   menuContainer.append(sectionTitle1, sectionSubTitle1, menuItem1, menuDescription1, menuPrice1, br1);
-
 
   const menuItem2 = document.createElement('div');
   menuItem2.innerHTML = "<h3>Veggies</h3>";
@@ -58,7 +55,6 @@ const menu = function () {
   const br3 = document.createElement('br');
 
   menuContainer.append(menuItem3, menuDescription3, menuPrice3, br3);
-
   
   const menuCardContainer1 = document.createElement('div');
   menuCardContainer1.className = "menu-card-container";

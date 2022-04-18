@@ -88,6 +88,10 @@ h5 {
   cursor: default;
 }
 
+.content-container {
+  margin: 0;
+}
+
 .main-container {
   margin: 0;
   background: url('./img/Sinking-Spring.jpg');
@@ -102,6 +106,7 @@ h5 {
 
 .info-container {
   text-align: center;
+  margin: 0;
 }
 
 #dim-container {
@@ -109,6 +114,7 @@ h5 {
   height: 100%;
   display: flex;
   align-items: center;
+  margin: 0;
 }
 
 #dimmer-container {
@@ -119,6 +125,7 @@ h5 {
   color:floralwhite;
   font-weight: 800;
   text-shadow: 1px 1px 1px black;
+  margin: 0;
 }
 
 footer {
@@ -135,6 +142,17 @@ footer {
   padding: 10px;
   font-family: 'Roboto', sans-serif;
   margin: 20px;
+}
+
+#address-container li {
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+}
+
+#address-container li a, div, address {
+  margin-left: 2rem;
+  margin-top: 0.5rem;
 }
 
 #social-container li {

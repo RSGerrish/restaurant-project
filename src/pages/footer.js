@@ -28,13 +28,15 @@ const footer = function() {
   addressContainer.appendChild(contactList);
 
   const contactPhone = document.createElement('li');
-  contactPhone.innerHTML = "<h3>Phone: <a href='tel:610-678-6300'>610.678.6300</a></h3>";
+  contactPhone.innerHTML = "<h5>Phone:</h5><a href='tel:610-678-6300'>610.678.6300</a>";
   const contactEmail = document.createElement('li');
-  contactEmail.innerHTML = "<h3>Email: <a href='mailto:mama@originalmamaspizza.com?'>mama@originalmamaspizza.com</a></h3>";
+  contactEmail.innerHTML = "<h5>Email:</h5><a href='mailto:mama@originalmamaspizza.com?'>mama@originalmamaspizza.com</a>";
+  const contactHours = document.createElement('li');
+  contactHours.innerHTML = "<h5>Hours:</h5><div>Mon - Thur 10AM - 8:30PM<br />Fri 10AM - 10PM<br />Sunday 10AM - 8PM</div>"
   const contactAddress = document.createElement('li');
-  contactAddress.innerHTML = "<h3><address>2661 Shillington Rd<br>Sinking Spring, PA 19608</address></h3>";
+  contactAddress.innerHTML = "<h5>Address:</h5><address>2661 Shillington Rd<br>Sinking Spring, PA 19608</address>";
   
-  contactList.append(contactPhone, contactEmail, contactAddress);
+  contactList.append(contactPhone, contactEmail, contactHours, contactAddress);
 
   //Build Social container
   const socialList = document.createElement('ul');
