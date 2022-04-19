@@ -4,6 +4,7 @@ import sinkingspring from "./pages/sinkingspring";
 import clear from "./functions/clear"
 import './style.css';
 import menu from "./pages/menu";
+import specials from "./pages/specials";
 
 //Find body element and give class of 'content'
 const content = document.querySelector('body');
@@ -30,7 +31,8 @@ btnMenu.addEventListener('click', function() {
 });
 
 btnSpecials.addEventListener('click', function() {
-
+  clear();
+  specials();
 });
 
 btnGC.addEventListener('click', function() {

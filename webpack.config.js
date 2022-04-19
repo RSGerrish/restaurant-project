@@ -8,6 +8,7 @@ module.exports = {
     footer: './src/pages/footer.js',
     sinkingspring: './src/pages/sinkingspring.js',
     menu: './src/pages/menu.js',
+    specials: './src/pages/specials.js',
     clear: './src/functions/clear.js',
   },
   plugins: [

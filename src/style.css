@@ -150,7 +150,7 @@ footer {
   justify-content:flex-start;
 }
 
-#address-container li a, div, address {
+#address-container > ul > li > a, #address-container > ul > li > div, address {
   margin-left: 2rem;
   margin-top: 0.5rem;
 }
@@ -179,6 +179,8 @@ footer {
   margin: 6px;
 }
 
+/* Begin Menu Styling */
+
 .menu-container {
   font-family: 'Roboto', sans-serif;
 }
@@ -186,6 +188,11 @@ footer {
 .menu-title {
   color: rgb(49, 49, 49);
   font-weight: 900;
+}
+
+.menu-title h1 {
+  margin-top: 0;
+  padding-top: 0.8rem;
 }
 
 .menu-subtitle h2 {
@@ -219,4 +226,73 @@ footer {
   border-radius: 10px;
   border: 1px solid black;
   text-align: center;
+}
+
+/* Begin Specials Styling */
+
+.lunch-spec-container {
+  padding-bottom: 2rem;
+}
+
+.mon-spec-container {
+  background-color: rgba(235, 235, 235, 50%);
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+.tue-spec-container {
+  padding-bottom: 2rem;
+}
+
+.wed-spec-container {
+  background-color: rgba(235, 235, 235, 50%);
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+.thur-spec-container {
+  padding-bottom: 2rem;
+}
+
+.we-spec-container {
+  background-color: rgba(235, 235, 235, 50%);
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+.specials-container
+{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+.spec-div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.spec-card {
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+}
+
+.spec-card img{
+  border-radius: 10px;
+  box-shadow: 0 0 4px black;
+  margin: 1rem;
+}
+
+.spec-card h4{
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0.2rem;
+}
+
+.spec-card h5 {
+  font-size: 0.8rem;
+  font-weight: 300;
 }
