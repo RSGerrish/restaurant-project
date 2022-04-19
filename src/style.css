@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 html {
   position: relative;
@@ -94,6 +95,7 @@ h5 {
 .content-container {
   margin: 0;
   display: flex;
+  justify-content: center;
   min-height: calc(100vh - 220px - 342px);
 }
 
@@ -339,4 +341,144 @@ footer {
   height: 2rem;
   width: 6rem;
   float: right;
+}
+
+/* Begin Location Styling */
+.loc-container {
+  display: grid;
+  justify-items: center;
+  grid-template: 5fr 8fr / 1fr 1fr;
+  font-family: 'Roboto', sans-serif;
+  padding: 40px 20px;
+}
+
+.loc-card {
+  border-radius: 15px;
+  box-shadow: 0 0 5px darkgrey;
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#loc-card-1 {
+  grid-area: 1 / 1 / span 1 / span 1;
+}
+
+#loc-card-2 {
+  grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.loc-title {
+  font-size: 3rem;
+  font-weight: 500;
+  text-shadow: 0.07rem 0.07rem 0.07rem black;
+  color: crimson;
+}
+
+.loc-phone>a {
+  color:forestgreen;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.loc-phone {
+  text-shadow: 0.07rem 0.07rem 0.07rem black;
+}
+
+.loc-address {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.loc-button {
+  min-width: 100px;
+  min-height: 40px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 3px 3px 3px black;
+  text-shadow: 0.07rem 0.07rem 0.07rem black;
+  background-color: crimson;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.cless-card {
+  grid-area: 2 / 1 / span 1 / span 2;
+  border-radius: 15px;
+  box-shadow: 0 0 5px darkgrey;
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  min-width: 700px;
+  max-width: 1050px;
+}
+
+.cless-card>ol {
+  max-width: 420px;
+  margin: 40px auto;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.cless-card>ol>li {
+  font-size: 1rem;
+  font-weight: 200;
+  margin-top: 10px;
+}
+
+.cless-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+/* Begin Career Styling */
+.app-container {
+  font-family: 'Roboto', sans-serif;
+  padding: 40px;
+}
+
+.app-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.app-subtitle {
+  color:rgb(61, 61, 61);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.app-form {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 2fr;
+  grid-auto-flow: row;
+  max-width: 500px;
+  margin: 40px auto;
+  gap: 10px;
+}
+
+.form-label {
+  text-align: right;
+}
+
+.form-text-input {
+  font-size: 1.5rem;
+}
+
+.but-submit {
+  float: right;
+  margin-left: auto;
+  height: 2rem;
+  width: 6rem;
+  grid-column: 1 / span 2;
 }

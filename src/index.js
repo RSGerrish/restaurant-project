@@ -4,6 +4,8 @@ import sinkingspring from "./pages/sinkingspring";
 import menu from "./pages/menu";
 import specials from "./pages/specials";
 import giftcards from "./pages/giftcards";
+import locations from "./pages/locations";
+import application from "./pages/application";
 import clear from "./functions/clear"
 import './style.css';
 
@@ -43,11 +45,13 @@ btnGC.addEventListener('click', function() {
 });
 
 btnLocs.addEventListener('click', function() {
-
+  clear();
+  locations();
 });
 
 btnCareers.addEventListener('click', function() {
-
+  clear();
+  application();
 })
 
 content.appendChild(contentContainer);

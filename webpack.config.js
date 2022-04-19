@@ -9,6 +9,9 @@ module.exports = {
     sinkingspring: './src/pages/sinkingspring.js',
     menu: './src/pages/menu.js',
     specials: './src/pages/specials.js',
+    giftcards: './src/pages/giftcards.js',
+    locations: './src/pages/locations.js',
+    application: './src/pages/application.js',
     clear: './src/functions/clear.js',
   },
   plugins: [
