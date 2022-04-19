@@ -1,10 +1,11 @@
 import header from "./pages/header";
 import footer from "./pages/footer";
 import sinkingspring from "./pages/sinkingspring";
-import clear from "./functions/clear"
-import './style.css';
 import menu from "./pages/menu";
 import specials from "./pages/specials";
+import giftcards from "./pages/giftcards";
+import clear from "./functions/clear"
+import './style.css';
 
 //Find body element and give class of 'content'
 const content = document.querySelector('body');
@@ -22,7 +23,8 @@ const btnLocs = document.querySelector('#link-locations');
 const btnCareers = document.querySelector('#link-careers');
 
 btnOO.addEventListener('click', function() {
-  //code
+  clear();
+  sinkingspring();
 });
 
 btnMenu.addEventListener('click', function() {
@@ -36,7 +38,8 @@ btnSpecials.addEventListener('click', function() {
 });
 
 btnGC.addEventListener('click', function() {
-
+  clear();
+  giftcards();
 });
 
 btnLocs.addEventListener('click', function() {

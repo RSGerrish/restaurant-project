@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+html {
+  position: relative;
+  min-height: 100%;
+}
 body {
   margin: 0;
-  height: 100vh;
 }
 
 a {
@@ -90,6 +93,8 @@ h5 {
 
 .content-container {
   margin: 0;
+  display: flex;
+  min-height: calc(100vh - 220px - 342px);
 }
 
 .main-container {
@@ -97,7 +102,7 @@ h5 {
   background: url('./img/Sinking-Spring.jpg');
   background-size: 2560px 1440px;
   background-position: center;
-  height: 100%;
+  min-width: 100vw;
 }
 
 .dim-container {
@@ -295,4 +300,43 @@ footer {
 .spec-card h5 {
   font-size: 0.8rem;
   font-weight: 300;
+}
+
+/* Begin Gift Cards Styling */
+.gc-container {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  min-height: calc(100vh - 220px - 342px);
+  min-width: 100vw;
+  justify-content: center;
+}
+
+.gc-container-2 {
+  max-width: 640px;
+}
+
+.gc-form {
+  display: flex;
+  justify-content: center;
+  width: 640px;
+}
+
+.gc-form-2 {
+  width: 640px;
+}
+
+#gc-number, .gc-form-2>label {
+  width: 600px;
+  margin: 20px;
+}
+
+#gc-number {
+  font-size: 2rem;
+}
+
+.gc-form-2>button {
+  margin: 1rem 1rem 1rem auto;
+  height: 2rem;
+  width: 6rem;
+  float: right;
 }

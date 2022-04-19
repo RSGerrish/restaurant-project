@@ -4,8 +4,6 @@ const sinkingspring = function() {
   //Identify main container of site
   const contentContainer = document.querySelector('.content-container');
 
-  contentContainer.style.height = "58.5%";
-
   const mainContainer = document.createElement('div');
   mainContainer.className = "main-container";
   contentContainer.appendChild(mainContainer);
